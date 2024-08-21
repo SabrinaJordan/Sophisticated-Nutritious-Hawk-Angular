@@ -1,0 +1,73 @@
+<div class="market-edge-layout251 thq-section-padding">
+  <div id="Services" class="market-edge-max-width thq-section-max-width">
+    <div class="thq-flex-row market-edge-section-title">
+      <div class="market-edge-column thq-flex-column">
+        <span class="thq-body-small">{{ slogan }}</span>
+        <h2 class="thq-heading-2 market-edge-text2">{{ sectionTitle }}</h2>
+      </div>
+      <span class="thq-body-small">{{ sectionDescription }}</span>
+    </div>
+    <div class="market-edge-content1">
+      <div class="market-edge-row thq-flex-row">
+        <div class="market-edge-feature1 thq-flex-column">
+          <img
+            [attr.alt]="feature1ImageAlt"
+            [attr.src]="feature1ImageSrc"
+            class="thq-img-ratio-4-3 market-edge-feature1-image"
+          />
+          <div class="market-edge-content2 thq-flex-column">
+            <h3>
+              <ng-container>
+                <ng-template #defaultFeature1Title1>
+                  <div class="market-edge-fragment">
+                    <h3 class="market-edge-feature1-title2 thq-heading-3">
+                      <span>Customized Data</span>
+                      <br />
+                      <span>Solutions</span>
+                    </h3>
+                  </div>
+                </ng-template>
+                <ng-container
+                  *ngTemplateOutlet="feature1Title1 ? feature1Title1 : defaultFeature1Title1"
+                ></ng-container>
+              </ng-container>
+            </h3>
+            <span class="thq-body-small">{{ feature1Description }}</span>
+          </div>
+        </div>
+        <div class="market-edge-feature2 thq-flex-column">
+          <img
+            [attr.alt]="feature2ImageAlt"
+            [attr.src]="feature2ImageSrc"
+            class="thq-img-ratio-4-3 market-edge-feature2-image"
+          />
+          <div class="market-edge-content3 thq-flex-column">
+            <h3 class="thq-heading-3">{{ feature2Title }}</h3>
+            <span class="thq-body-small">{{ feature2Description }}</span>
+          </div>
+        </div>
+        <div class="market-edge-feature3 thq-flex-column">
+          <img
+            [attr.alt]="feature3ImageAlt"
+            [attr.src]="feature3ImageSrc"
+            class="thq-img-ratio-4-3 market-edge-feature3-image"
+          />
+          <div class="market-edge-content4 thq-flex-column">
+            <h3 class="thq-heading-3">{{ feature3Title }}</h3>
+            <span class="thq-body-small">{{ feature3Description }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="market-edge-actions">
+      <button class="thq-button-filled market-edge-button1">
+        <a href="#Contact" class="market-edge-action1 thq-body-small">
+          {{ mainAction }}
+        </a>
+      </button>
+      <button class="thq-button-outline market-edge-button2">
+        <span class="thq-body-small">{{ secondaryAction }}</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+<footer class="footer-footer4 thq-section-padding">
+  <div class="footer-max-width thq-section-max-width">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img [attr.alt]="logoAlt" [attr.src]="logoSrc" class="footer-image1" />
+      </div>
+      <div class="footer-links">
+        <a href="#Top" class="footer-link5">
+          <ng-container>
+            <ng-template #defaultLink5>
+              <div class="footer-fragment5">
+                <span class="footer-text5 thq-body-small">Home</span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="link5 ? link5 : defaultLink5"
+            ></ng-container>
+          </ng-container>
+        </a>
+        <a href="#Services" class="footer-link2">
+          <ng-container>
+            <ng-template #defaultLink2>
+              <div class="footer-fragment3">
+                <span class="footer-text3 thq-body-small">Services</span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="link2 ? link2 : defaultLink2"
+            ></ng-container>
+          </ng-container>
+        </a>
+        <a href="#Values" class="footer-link3">
+          <ng-container>
+            <ng-template #defaultLink3>
+              <div class="footer-fragment4">
+                <span class="footer-text4 thq-body-small">Values</span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="link3 ? link3 : defaultLink3"
+            ></ng-container>
+          </ng-container>
+        </a>
+        <a href="#About" class="footer-link1">
+          <ng-container>
+            <ng-template #defaultLink1>
+              <div class="footer-fragment2">
+                <span class="footer-text2 thq-body-small">About Us</span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="link1 ? link1 : defaultLink1"
+            ></ng-container>
+          </ng-container>
+        </a>
+        <a href="#Contact" class="footer-link4">
+          <ng-container>
+            <ng-template #defaultLink4>
+              <div class="footer-fragment1">
+                <span class="footer-text1 thq-body-small">Contact</span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="link4 ? link4 : defaultLink4"
+            ></ng-container>
+          </ng-container>
+        </a>
+      </div>
+      <div class="footer-social-links">
+        <a
+          href="https://www.linkedin.com/company/8bit-insights/"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="footer-link"
+        >
+          <svg
+            viewBox="0 0 877.7142857142857 1024"
+            class="footer-icon1 thq-icon-small"
+          >
+            <path
+              d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-credits">
+      <div class="thq-divider-horizontal"></div>
+      <div class="footer-row">
+        <div class="footer-footer-links">
+          <span class="thq-body-small">© 2024 8bit Insights, LLC</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
